@@ -1,0 +1,36 @@
+<html>
+<body>
+<script>
+
+    let a = [55, 10, -1]
+
+    let b = []
+    b.push(33)
+    b.push(9)
+    b.push(-2)
+
+    let firdArray = []
+    firdArray[2] = 42
+    firdArray[1] = -8
+    firdArray[0] = 2
+
+    
+    console.log( increasPositivesByFive(a) )
+    console.log( increasPositivesByFive(b) )
+    console.log( increasPositivesByFive(firdArray) )
+
+    function increasPositivesByFive(array){ 
+        let i = 0
+
+        while (i < 3) {
+            if (array[i] > 0){
+                array[i] += 5
+            }
+            i++ 
+        }
+        return array
+    }
+
+</script>
+</body>
+</html>
