@@ -1,0 +1,36 @@
+<html>
+<body>
+<script>
+
+let array = [52, 25, 19, 34, 211, 65, -10, 95]
+
+let max = array[0]
+
+console.log("Max = " + findMax(array))  
+
+function findMax(array) {
+
+  for (let i = 0; i < array.length-1; i=i+1) {
+           
+    if (max > array[i+1]) {
+
+         max = max
+         console.log(max)
+    } 
+    else {
+        
+         let max = array[i+1]
+         console.log(max)
+    }
+  }
+  return max
+}   
+
+</script>
+</body>
+</html>
+
+
+
+
+

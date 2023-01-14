@@ -1,0 +1,35 @@
+<html>
+<body>
+<script>
+
+let array = [-22, 25, 0, 270, 34, 21, 201, -10, 95, 110, 15, 99, 100, 36]
+
+console.log(removeItems(array))
+
+function removeItems(array) {
+
+  let newArray = []
+
+  for (i=0; i < array.length; i=i+1) {
+    
+    if (array[i] < 0 || array[i] > 100) {
+      
+      newArray.push(array[i])
+
+    }
+  }
+  return newArray
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
