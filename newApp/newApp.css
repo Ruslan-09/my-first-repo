@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background: linear-gradient(90deg, lightgray, gray, darkgray);
+}
+h2, p, h4 {
+    color: #520926;
+}
+button {
+    margin: 5px;
+    font-weight: bold;
+    color: #ffd;
+    padding: 16px;
+    text-shadow: 3px -1px 1px rgba(0,0,0,.7);
+    border-radius: 7px;
+    border: 1px solid #2E8B57;
+    background: linear-gradient(#bd5b82, #6a4659 75%);
+    box-shadow:
+     3px 3px 3px #cc639d,
+     inset 0 1px rgba(250,250,250,.7),
+     inset 0 0 4px rgba(255,255,255,.7),
+     2px 2px 25px rgba(0,0,0,.4);
+    transition: 0.3s;
+  }
+input {
+    margin: 0 0 10px 0;
+    box-shadow:
+     3px 3px 3px #cc639d,
+     inset 0 1px rgba(250,250,250,.7),
+     inset 0 0 4px rgba(255,255,255,.7),
+     2px 2px 25px rgba(0,0,0,.4);
+    transition: 0.3s;
+}
+
