@@ -1,9 +1,22 @@
 body {
     text-align: center;
-    background: linear-gradient(90deg, lightgray, gray, darkgray);
+    background: linear-gradient(90deg, lightgray, gray);
 }
-h2, p, h4 {
+h2 {
     color: #520926;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+}
+h4, p {
+    color: #520926;
+}
+input {
+    margin: 0 0 10px 0;
+    box-shadow:
+     3px 3px 3px #cc639d,
+     inset 0 1px rgba(250,250,250,.7),
+     inset 0 0 4px rgba(255,255,255,.7),
+     2px 2px 25px rgba(0,0,0,.4);
+    transition: 0.3s;
 }
 button {
     margin: 5px;
@@ -20,14 +33,23 @@ button {
      inset 0 0 4px rgba(255,255,255,.7),
      2px 2px 25px rgba(0,0,0,.4);
     transition: 0.3s;
-  }
-input {
-    margin: 0 0 10px 0;
+}
+button:hover {
+    background: linear-gradient(#818784, #4e5150 75%);
     box-shadow:
-     3px 3px 3px #cc639d,
+     3px 3px 3px #818784,
      inset 0 1px rgba(250,250,250,.7),
      inset 0 0 4px rgba(255,255,255,.7),
      2px 2px 25px rgba(0,0,0,.4);
-    transition: 0.3s;
+}
+button:active {
+    background: linear-gradient(#818784 10%, #4e5150);
+    box-shadow:
+     inset 0 1px rgba(250,250,250,.7),
+     inset 0 0 4px rgba(255,255,255,.7),
+     0 2px rgb(80,30,10),
+     0 1px 6px rgba(0,0,0,.9);
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
 }
 
