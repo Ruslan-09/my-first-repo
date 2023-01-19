@@ -1,0 +1,32 @@
+body{
+    zoom: 2;
+    text-align: center;
+    background: linear-gradient(90deg, lightgray, gray);
+}
+h1{
+    color: rgb(133, 67, 67);
+    text-shadow: 1px -2px 2px rgb(21, 21, 21);
+}
+button{
+    background: linear-gradient(90deg, lightpink, rgb(212, 97, 117));
+    border: solid rgb(185, 75, 93);
+    border-radius: 2px;
+
+}
+details summary::-webkit-details-marker {   
+    display: none
+}
+details > summary {                     
+    list-style: none;
+}
+details{
+    border:thin dotted rgb(23, 23, 23);
+}
+.withoutJs{
+    width: 100px; height: 17px;
+    font-size: 90%;
+    border: solid rgb(185, 75, 93);
+    margin: 0 305px 0 305px;
+    background: linear-gradient(90deg, lightpink, rgb(212, 97, 117));
+    border-radius: 2px;
+}

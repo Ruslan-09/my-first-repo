@@ -24,15 +24,22 @@ function showGeneralInfoContent() {
 }
 
 function showLanguagesContent() {
-
-	var languagesContent = document.getElementById("languages-content")
-	var languagesButton = document.getElementById("languages-button")
-
-	if (languagesContent.style.display === "none") {
-		languagesContent.style.display = "block"
-		languagesButton.innerHTML = "Language skills (hide)";
+	if (document.getElementById("languages-content").style.display === "none") {
+		document.getElementById("languages-content").style.display = "block"
+		document.getElementById("languages-button").innerHTML = "Language skills (hide)";
 	} else {
-		languagesContent.style.display = "none"
-		languagesButton.innerHTML = "Language skills (show)"
+		document.getElementById("languages-content").style.display = "none"
+		document.getElementById("languages-button").innerHTML = "Language skills (show)"
 	}
 }
+
+function details(){
+	if (x = document.getElementById("education").open){
+		document.getElementById("education").open = false
+	} else{
+		document.getElementById("education").open = true
+	}	
+}
+	
+	
+

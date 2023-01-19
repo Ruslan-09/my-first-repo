@@ -2,10 +2,11 @@
 <html>
 
 <title>Resume</title>
+<link rel="stylesheet" href="resume.css">
+<script src="./js/resume.js"></script>
 
-<!-- тело страницы. стиль выравнено по левому краю -->
-<body style="text-align:left;">
-    
+<body>
+
     <h1>John Smith Junior</h1>
 	
 	<p id="general-info">
@@ -14,27 +15,44 @@
 		    <!-- кнопка отображения/скрытия содержание блока общей информации. вызывает функцию из скрипта -->
 			<button id="general-info-button" onclick="showGeneralInfoContent()">General info (show)</button>
 			<!-- содержание блока общей информации. стиль видимый(block) / скрытый (none) -->
-			<div id="general-info-content" style="display:none;">
+			<p id="general-info-content" style="display:none;">
 				Marital status: single, no children. <br>
 				Citizenship: US. <br>
 				Lives: Oslo (ready to relocate to Helsinki)<br>
-			</div>
+			</p>
 		</div>
 	</p>
 	
 	<p id="languages">
 		<div style="border:thin dotted gray;">
 			<button id="languages-button" onclick="showLanguagesContent()">Language skills (show)</button>
-	        <div id="languages-content" style="display:none;">
+	        <p id="languages-content" style="display:none;">
 				English - native<br>
 				Norwegian - fluent<br>
 				Finnish - upper-intermediate<br>
-			</div>
+			</p>
 		</div>
 	</p>
 
-    <!-- скрипт JS -->
-	<script src="./js/resume.js"></script>
+	<details id="education">
+		<summary>
+			<button onclick="details()">Education</button>
+		</summary>
+		<p>Harward. <span style="color: red;">Red</span> diploma.</p>	
+	</details>
 	
+    <p>
+	<details>
+		<summary class="withoutJs">
+			My contacts
+		</summary>
+		<p>
+			Tel.: +90-596-626-55 <br>
+			E-mail: junior@gmail.com
+		</p>	
+	</details>
+	</p>
+
+
 </body> 
 </html>
